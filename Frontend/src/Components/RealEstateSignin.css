@@ -1,0 +1,167 @@
+/* RealEstateSignin.css */
+
+.signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #d8232a, #ffffff);
+    animation: backgroundFade 10s infinite alternate;
+}
+
+.signin-content {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    animation: slideIn 0.8s ease-out;
+}
+
+
+.signin-image {
+    flex: 1;
+    text-align: center;
+    margin-right: 2rem;
+}
+
+.signin-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.signin-image img:hover {
+    transform: scale(1.05);
+}
+
+.signin-image-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #d8232a;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.signin-image-link:hover {
+    color: #ff4a50;
+}
+
+.signin-form {
+    flex: 1;
+    width: 100%;
+}
+
+.signin-form-title {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #d8232a;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.signin-form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.signin-form-group .fa {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+    transition: color 0.3s;
+}
+
+.signin-form-group input {
+    width: 100%;
+    padding: 0.75rem 0.75rem 0.75rem 2.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.signin-form-group input:focus {
+    border-color: #d8232a;
+}
+
+.signin-form-group input:focus + .fa {
+    color: #d8232a;
+}
+
+.signin-form-error {
+    color: #e74c3c;
+    text-align: center;
+    margin-bottom: 1rem;
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.signin-form-button {
+    text-align: center;
+}
+
+.signin-form-submit {
+    text-align: center;
+    padding: 0.75rem 2rem;
+    background: #d8232a;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    animation: buttonFadeIn 1s ease forwards;
+}
+
+@keyframes buttonFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.signin-form-submit:hover {
+    background: transparent;
+    border: 1px #d8232a solid;
+    color: #d8232a;
+}
+
+.social-login {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.social-login p {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.socicons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-link {
+    color: #333;
+    font-size: 1.5rem;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-link:hover {
+    transform: scale(1.2);
+    color: #d8232a;
+}
